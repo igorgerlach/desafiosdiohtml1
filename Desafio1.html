@@ -3,77 +3,135 @@
     <head>
         <title>Desafio 1 DIO</title>
     </head>
+    <body bgcolor="#68a3a1">
+        <!-- Início do Código -->
+        <h1 id="inicio">HTML e suas <i>Tags</i></h1>
+        <hr>
+        <h2>Índice</h2>
+        <!-- Tags a usar: h1, p, mark, small, i, u, strong, a, hr, sub, sup, blockquote -->
+        <!-- Tags extras (pesquisar) font, del, abbr -->
 
+        <!-- 
+        Explicação:
+            h1          - Header, cabeçalho. X
+            p           - Parágrafo. X
+            mark        - Marca texto.
+            small       - Texto pequeno.
+            i           - Itálico.
+            u           - Sublinhado.
+            strong      - Negrito.
+            a           - Âncora, texto com link.
+            hr          - Linha que atravessa a página na horizontal.
+            sub         - Texto abaixo, ex.: ₑₓₑₘₚₗₒ.
+            sup         - Texto elevado, ex.: ᵉˣᵉᵐᵖˡᵒ (https://smalltext.io).
+            blockquote  - Citação. X
 
-    <body>
+        Extra:
+            font        - Muda tamanho, cor e a fonte do texto.
+            del         - Risca o texto,  ̶E̶x̶e̶m̶p̶l̶o.
+            abbr        - Define uma abreviação, pelo atributo "title" que deve ser alterada por CSS
 
-        <!--Retirar quando acabar-->
-        <h1>Oque falta fazer:</h1>
+        Referências:
+            - https://www.alura.com.br/artigos/o-que-e-html-suas-tags-parte-1-estrutura-basica
+            - https://developer.mozilla.org/en-US/docs/Web/HTML/Element/font
+            - https://developer.mozilla.org/en-US/docs/Web/HTML/Element/del
+            - https://developer.mozilla.org/en-US/docs/Web/HTML/Element/abbr
+        -->
+
+        <ol>
+            <li><a href="#Tags"> O que são as Tags.</a></li>
+            <li><a href="#Tags de texto">Tags de texto.</a></li>
+            <!-- h1, p, blockquote -->
+            <li><a href="#Tags transformar texto">Tags que transformam o Texto.</a></li>
+            <!-- mark, small, i, u, strong, sup, sub, font, del, abbr -->
+            <li><a href="#Tag Link">Tag link.</a></li>
+            <!-- a, href -->
+            <li><a href="#Tag Detalhe">Tag detalhe.</a></li>
+            <!-- hr -->
+            <li><a href="#Referências">Referências</a></li>
+        </ol>
+
+        <!-- -------------------------------------------------------------------------------------------------------------------------------------------- -->
+        <!-- -------------------------------------------------------------------------------------------------------------------------------------------- -->
+        <hr>
+        <h3 id="Tags">O que são Tags?</h3>
+        <p>(<a href="#inicio">Voltar</a>)</p>
+        <p>Podemos começar falando, primeiramente, sobre o que são tags:</p>
+        <p>- As <i>Tags</i> são formadas por uma estrutura própria, iniciam com o sinal “menor que”, em seguida vem o nome daquele elemento e por fim, o sinal “maior que”. Podem ser dispostas em tags que precisam de fechamento e tags que fecham sozinhas (self-closing). O fechamento de uma tag será definido com uma barra (/), sendo que no caso das tags de auto fechamento, não há necessidade da presença desse caractere.</p>
+        <p>Dentre essas, podemos analisar tipos diferentes de <i>Tags</i>, como <i>Tags</i> texto, que transformam textos, de Link, e até para detalhes.</p>
+
+        <!-- -------------------------------------------------------------------------------------------------------------------------------------------- -->
+        <h3 id="Tags de texto">Tags de texto</h3>
+        <p>(<a href="#inicio">Voltar</a>)</p>
+        <p>Entre todas as tags utilizadas para formatação de estrutura de texto, vou citar 3 tipos.</p>
         <ul>
-            <li>h1 - h6</li>
-            <li>p</li>
-            <li>mark</li>
-            <li>small</li>
-            <li>i</li>
-            <li>u</li>
-            <li>strong</li>
-            <li>a</li>
-            <li>hr</li>
-            <li>sub</li>
-            <li>sup</li>
-            <li>blockquote</li>
+            <li><b>1 - </b>A Tag <code>h1</code>, que pode ir de <code>h1</code> até <code>h6</code>, é chamada de Header, ou cabeçalho:</li>
+            <!-- Tem a função de criar a estrutura de um cabeçalho, título, em destaque, e quanto maior sua hierarquia (definida pelo número depois do "h"), maior seu destaque no texto, como o exemplo abaixo: -->
+            <h4>Exemplo de h4</h4>
+            <h5>Exemplo de h5</h5>
+            <h6>Exemplo de h6</h6>
+            <!-- -------------------------------------------------------------------------------------------------------------------------------------------- -->
+            <li><b>2 - </b>A Tag <code>p</code> é chamada de Paragraph, ou parágrafo:</li>
+            <!-- Tem a função de criar uma estrutura de parágrafo, e diferente do h1 - h6, não tem uma hierarquia, como por exemplo: -->
+            <p>Exemplo de p</p>
+            <p>Exemplo de p</p>
+            <p>Exemplo de p</p>
+            <!-- -------------------------------------------------------------------------------------------------------------------------------------------- -->
+            <li><b>3 - </b>A Tag <code>blockquote</code> é chamada de bloco de citação:</li>
+            <!-- Tem a função de criar um texto bloco, que funciona como citação, por exemplo: -->
+            <p>"Alguma frase filosófica."</p>
+            <blockquote> - Algum filósofo maneiro. (esse é o blockquote)</blockquote>
         </ul>
-        <h2>Extras:</h2>
+        <!-- -------------------------------------------------------------------------------------------------------------------------------------------- -->
+        <!-- -------------------------------------------------------------------------------------------------------------------------------------------- -->
+        <hr>
+        <h3 id="Tags transformar texto">Tags que transformam o texto</h3>
+        <p>(<a href="#inicio">Voltar</a>)</p>
+        <p>De muitas Tags que podem ser utilizadas para transformar um texto, vou citar 10, de forma resumida:</p>
         <ul>
-            <li>font</li>
-            <li>del</li>
-            <li>abbr</li>
+            <li> Mark - <mark>Marca texto</mark></li>
+            <li> Small - <small>Deixa texto pequeno</small></li>
+            <li> Strong - <strong>Deixa o texto em Negrito </strong>(pode ser substituído por <code>b</code>)</li>
+            <li> Sub - <sub>Deixa o texto "elevado"</sub></li>
+            <li> Sup - <sup>Deixa o texto "baixo"</sup></li>
+            <li> Font - <font style="color: aqua; font-family: cursive; font-size: larger;">Muda o tamanho, fonte e cor do texto</font> (Não suportado em HTML5)</li>
+            <li> Abbr - Define o texto como sigla, identificado pelo atributo <code>title=""</code>, dentro do abbr, que altera todas as siglas por CSS usando o id do title</li>
+            <li> Del - <del>Deixa o texto rasurado</del></li>
+            <li> i - <i>Deixa o texto em Itálico</i></li>
+            <li> u - <u>Deixa o texto sublinhado</u></li>
         </ul>
-        <!--Retirar quando acabar-->
-
-        <!--Início do Código-->
-
-        <h1>HTML e suas <i>Tags</i></h1>
-        <h3>Vamos juntos aprender as seguintes <i>tags</i>:</h3>
-            <!-- Tags a usar: h1, p, mark, small, i, u, strong, a, hr, sub, sup, blockquote -->
-            <!-- Tags extras (pesquisar) font, del, abbr -->
-
-            <!-- 
-            
-            Explicação:
-                h1          - Header, cabeçalho.
-                p           - Parágrafo.
-                mark        - Marca texto.
-                small       - Texto pequeno.
-                i           - Itálico.
-                u           - Sublinhado.
-                strong      - Negrito.
-                a           - Âncora, texto com link.
-                hr          - Linha que atravessa a página na horizontal.
-                sub         - Texto abaixo,  ex.: ₑₓₑₘₚₗₒ.
-                sup         - Texto elevado, ex.: ᵉˣᵉᵐᵖˡᵒ (https://smalltext.io).
-                blockquote  - Citação.
-
-            Extra:
-                font        - Muda tamanho, cor e a fonte do texto.
-                del         - Risca o texto,  ̶E̶x̶e̶m̶p̶l̶o.
-                abbr        - Define uma abreviação, pelo atributo "title" que deve ser alterada por CSS
-            -->
-
-            <ol>
-                <li><a href="#Tags"> O que são as Tags.</a></li>
-                <li><a href="#Tags de texto">Tags de texto.</a></li>                         <!-- h1, p, blockquote -->
-                <li><a href="#Tags transformar texto">Tags que transformam o Texto.</a></li> <!-- mark, small, i, u, strong, sup, sub, font, del, abbr -->
-                <li><a href="#Tag Link">Tag link.</a></li>                                   <!-- a, href -->
-                <li><a href="#Tag Detalhe">Tag detalhe.</a></li>                             <!-- hr -->
-                <li><a href="#Referências">Referências</a></li>
-            </ol>
-
-    
-            <h3 id="Tags">O que são Tags?</h3>
-            <p>Podemos começar a falar sobre, primeiramente, o que são tags:</p>
-            <p>- Tags são...</p>
-
+        <!-- -------------------------------------------------------------------------------------------------------------------------------------------- -->
+        <!-- -------------------------------------------------------------------------------------------------------------------------------------------- -->
+        <hr>
+        <h3 id="Tag Link">Tag Link</h3>
+        <p>(<a href="#inicio">Voltar</a>)</p>
+        <p>Das muitas que existem, a tag <code>a</code> é o único Hyperlink que eu já estudei até agora, no dia que estou fazendo o primeiro Desafio da DIO.</p>
+        <ul>
+            <li>A Tag <code>a</code> é chamada de âncora, ou seja, ela, através de um texto, quando clicado, o usuário é direcionado para um outro site, abrindo na mesma aba (com o atributo <code>target="_self"</code>) dentro do <code>a</code> ou em outra (com o atributo <code>target="_blank"</code>)</li>
+            <p>- Dentro da Tag, é usado o atributo <i>href="link"</i>, onde é armazenado o link de destino, como por exemplo:</p>
+            <p>Quando clicar <a href="https://www.youtube.com" target="_blank">aqui</a>, você será direcionado para o site do Youtube.</p>
+            <p>- Ou, podemos usar o <i>href=#id</i>, para direcionarmos o usuário para algum lugar da página atual, com o identificador: <i>id</i>, utilizado após o <i>#</i>.</p>
+            <p>Quando clicar <a href="#inicio">aqui</a>, você voltará para o início desta página.</p>
+        </ul>
+        <!-- -------------------------------------------------------------------------------------------------------------------------------------------- -->
+        <!-- -------------------------------------------------------------------------------------------------------------------------------------------- -->
+        <hr>
+        <h3 id="Tag Detalhe">Tag Detalhe</h3>
+        <p>(<a href="#inicio">Voltar</a>)</p>
+        <p>Uma das Tags que aprendi para detalhar é a <code>hr</code> que cria uma linha que atravessa a página horizontalmente, muito usado para destacar o título do site, ou cabeçalhos.</p>
+        <hr>
+        <p>Como por exemplo ^</p>
+        <!-- -------------------------------------------------------------------------------------------------------------------------------------------- -->
+        <!-- -------------------------------------------------------------------------------------------------------------------------------------------- -->
+        <hr>
+        <h3 id="Referências">Referências</h3>
+        <p>(<a href="#inicio">Voltar</a>)</p>
+        <ul>
+            <li>https://www.alura.com.br/artigos/o-que-e-html-suas-tags-parte-1-estrutura-basica</li>
+            <li>https://developer.mozilla.org/en-US/docs/Web/HTML/Element/font</li>
+            <li>https://developer.mozilla.org/en-US/docs/Web/HTML/Element/del</li>
+            <li>https://developer.mozilla.org/en-US/docs/Web/HTML/Element/abbr</li>
+        </ul>
 
     </body>
 </html>
